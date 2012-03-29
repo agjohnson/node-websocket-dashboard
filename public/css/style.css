@@ -1,0 +1,20 @@
+
+body {
+    margin: 1em;
+    font-family: serif;
+    font-size: 1em;
+}
+
+#dashboard {
+    width: 50em;
+    margin-left: 4em;
+}
+
+#dashboard .message, #dashboard > div {
+    padding: .8em;
+    margin: .6em 0em;
+    font-style: italic;
+    background: #f7f7f7;
+    color: #444;
+}
+
