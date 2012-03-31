@@ -1,0 +1,21 @@
+{
+  "name": "node-websocket-dashboard",
+  "main": "dashboard.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "connect": "*",
+    "redis": "*",
+    "jade": "*",
+    "socket.io": "*"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/agjohnson/node-websocket-dashboard.git"
+  }
+}

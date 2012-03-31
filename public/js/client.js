@@ -1,6 +1,5 @@
-// dashb - client.js
 
-var socket = io.connect('http://localhost:32001');
+var socket = io.connect();
 
 socket.on('message text', function (data) {
     var msg = $('<div/>');
