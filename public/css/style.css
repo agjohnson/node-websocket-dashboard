@@ -14,7 +14,10 @@ body {
     padding: .8em;
     margin: .6em 0em;
     font-style: italic;
-    background: #f7f7f7;
     color: #444;
 }
 
+#dashboard .message-notice {
+    background: orangered;
+    color: white;
+}

@@ -6,7 +6,7 @@ var client = redis.createClient();
 process.stdin.resume()
 
 process.stdin.on('data', function (data) {
-    client.publish('text', data.toString());
+    client.publish('dashboard', data.toString());
 });
 
 process.stdin.on('end', function () {
