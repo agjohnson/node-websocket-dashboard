@@ -5,8 +5,13 @@ var client = redis.createClient();
 
 process.stdin.resume()
 
-process.stdin.on('data', function (data) {
-    client.publish('dashboard', data.toString());
+process.stdin.on('data', function (buffer) {
+    var data = buffer.toString();
+    var raw = JSON.stringify({
+        'data': data,
+        'type': 'text'
+    });
+    client.publish('dashboard', raw);
 });
 
 process.stdin.on('end', function () {
